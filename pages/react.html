@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" >
+    <title>Статья - React</title>
+    <link rel="stylesheet" href="../css/styles.css" >
+  </head>
+  <body>
+    <div class="container">
+      <header class="header">
+        <a href="../index.html" class="header-inner">
+          <h1 class="header__title">frame.works</h1>
+          <span class="header__subtitle">Все о самых разных фреймворках</span>
+        </a>
+      </header>
+      <div class="app">
+        <aside class="app-sidebar">
+          <form class="app-sidebar-search">
+            <input type="search" class="app-sidebar-search__input" required >
+            <input
+              type="submit"
+              class="app-sidebar-search__button"
+              value="Поиск"
+            >
+          </form>
+          <ul class="app-sidebar-items">
+            <li class="app-sidebar-item">
+              <h2 class="app-sidebar-item__title">Свежие записи</h2>
+              <ul class="app-sidebar-item-items">
+                <li class="app-sidebar-item-item">
+                  <a href="" class="app-sidebar-item-item__link">React</a>
+                </li>
+                <li class="app-sidebar-item-item">
+                  <a href="./vue.html" class="app-sidebar-item-item__link"
+                    >Vue</a
+                  >
+                </li>
+              </ul>
+            </li>
+            <li class="app-sidebar-item">
+              <h2 class="app-sidebar-item__title">Свежие комментарии</h2>
+              <ul class="app-sidebar-item-items">
+                <li class="app-sidebar-item-item">
+                  <a
+                    href="#comments-section"
+                    class="app-sidebar-item-item__link"
+                    >Эван Ю
+                    <span class="app-sidebar-item-item__link-highlight"
+                      >к записи</span
+                    >
+                    React</a
+                  >
+                </li>
+              </ul>
+            </li>
+            <li class="app-sidebar-item">
+              <h2 class="app-sidebar-item__title">Архивы</h2>
+              <ul class="app-sidebar-item-items">
+                <li class="app-sidebar-item-item">
+                  <a href="./archive.html" class="app-sidebar-item-item__link"
+                    >Февраль 2013</a
+                  >
+                </li>
+              </ul>
+            </li>
+            <li class="app-sidebar-item">
+              <h2 class="app-sidebar-item__title">Рубрики</h2>
+              <ul class="app-sidebar-item-items">
+                <li class="app-sidebar-item-item">
+                  <a href="./frontend.html" class="app-sidebar-item-item__link"
+                    >Frontend</a
+                  >
+                </li>
+              </ul>
+            </li>
+            <li class="app-sidebar-item">
+              <h2 class="app-sidebar-item__title">Мета</h2>
+              <ul class="app-sidebar-item-items">
+                <li class="app-sidebar-item-item">
+                  <a href="#" class="app-sidebar-item-item__link"
+                    >Управление сайтом</a
+                  >
+                </li>
+                <li class="app-sidebar-item-item">
+                  <a href="#" class="app-sidebar-item-item__link">Выйти</a>
+                </li>
+                <li class="app-sidebar-item-item">
+                  <a href="#" class="app-sidebar-item-item__link">
+                    <u class="app-sidebar-item-item__link-underline">RSS</u>
+                    записей
+                  </a>
+                </li>
+                <li class="app-sidebar-item-item">
+                  <a href="#" class="app-sidebar-item-item__link">
+                    <u class="app-sidebar-item-item__link-underline">RSS</u>
+                    комментариев
+                  </a>
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </aside>
+        <main class="app-main app-main--article">
+          <span class="article__time">24 февраля 2013</span>
+          <h1 class="article__h1">Введение в React</h1>
+          <p class="article__p">
+            React — это популярная JavaScript-библиотека для создания
+            пользовательских интерфейсов. Она разработана Facebook и активно
+            используется для разработки современных веб-приложений.
+          </p>
+          <h2 class="article__h2">Основные концепции React</h2>
+          <p class="article__p">
+            React основан на компонентном подходе, что позволяет разбивать
+            интерфейс на независимые части. Это упрощает разработку и поддержку
+            кода.
+          </p>
+          <h3 class="article__h3">Компоненты</h3>
+          <p class="article__p">
+            Компоненты — это строительные блоки React. Они могут быть
+            функциональными или классовыми. Функциональные компоненты проще и
+            рекомендуются для использования.
+          </p>
+          <h3 class="article__h3">JSX</h3>
+          <p class="article__p">
+            JSX — это синтаксическое расширение, которое позволяет писать
+            HTML-подобный код в JavaScript. Это делает код более читаемым и
+            удобным для работы.
+          </p>
+          <h3 class="article__h3">Состояние и пропсы</h3>
+          <p class="article__p">
+            Состояние (state) и пропсы (props) — это основные способы управления
+            данными в React. Состояние используется для хранения изменяемых
+            данных внутри компонента, а пропсы — для передачи данных между
+            компонентами.
+          </p>
+          <h2 class="article__h2">Преимущества React</h2>
+          <ol class="article__ol">
+            <li class="article__ol-li">
+              Компонентный подход упрощает разработку и тестирование.
+            </li>
+            <li class="article__ol-li">
+              Virtual DOM обеспечивает высокую производительность.
+            </li>
+            <li class="article__ol-li">
+              Большое сообщество и множество готовых решений.
+            </li>
+          </ol>
+          <h2 class="article__h2">Пример использования React</h2>
+          <p class="article__p">
+            Ниже приведен пример простого компонента, который отображает текст:
+          </p>
+          <code class="article__blockquote">
+            <span class="article__blockquote-text">
+              function Welcome(props) {<br>
+              &nbsp;&nbsp;return &lt;h1&gt;Привет, {props.name}&lt;/h1&gt;;<br>
+              }
+            </span>
+          </code>
+          <h2 class="article__h2">Галерея</h2>
+          <div class="article__image-grid">
+            <div class="article__image-grid-img">
+              <img
+                class="article__image-grid-img-inner"
+                src="../public/img/articles/article-1/1.jpeg"
+                alt="Пример кода с react-router, lazy components и Suspense для динимической подрузки страниц"
+              >
+            </div>
+            <div class="article__image-grid-img">
+              <img
+                class="article__image-grid-img-inner"
+                src="../public/img/articles/article-1/2.avif"
+                alt="Пример кода с react-router, использующий BrowserRouter, Switch, Route и три ProtectedRoute"
+              >
+            </div>
+            <div class="article__image-grid-img">
+              <img
+                class="article__image-grid-img-inner"
+                src="../public/img/articles/article-1/3.jpg"
+                alt="Простой пример кода использующий два компонента, один из которых отображает другой, и оба подписываются на события из глобального стора"
+              >
+            </div>
+            <div class="article__image-grid-img">
+              <img
+                class="article__image-grid-img-inner"
+                src="../public/img/articles/article-1/4.jpg"
+                alt="Пример запроса SQL в JavaScript, использующий интерфейс для фильтра колонок через callback функцию"
+              >
+            </div>
+          </div>
+          <h2 class="article__h4">Заключение</h2>
+          <p class="article__p">
+            React — это мощный инструмент для создания современных
+            веб-приложений. Его простота и гибкость делают его одним из лучших
+            выборов для разработчиков.
+          </p>
+        </main>
+      </div>
+      <div class="article__comments" id="comments-section">
+        <h2 class="article__comments-title">Комментарии</h2>
+        <div class="article__comment">
+          <h3 class="article__comment-title">Эван Ю</h3>
+          <p class="article__comment-text">
+            Отличная статья! Очень впечатляет, как React продолжает вдохновлять
+            разработчиков на создание сложных конструкций для простых задач.
+            Иногда кажется, что React — это как сборка мебели из IKEA:
+            инструкция на 50 страниц, куча мелких деталей, и в итоге ты всё
+            равно получаешь тумбочку, которая шатается. Но, конечно, это же
+            часть его очарования, правда? 😄
+          </p>
+          <p class="article__comment-text">
+            Кстати, если вдруг кому-то надоест писать useMemo, useCallback и
+            useEffect для каждого чиха, всегда есть альтернативы... Ну, вы
+            понимаете, о чём я. 😉"
+          </p>
+        </div>
+      </div>
+      <footer class="footer">
+        <p class="footer-text">
+          Все права защищены &copy; 2013 frame.works
+          <br>
+          Почта автора:
+          <a class="footer-text__link" href="mailto:test@mail.com"
+            >test@mail.com</a
+          >; Телефон автора:
+          <a class="footer-text__link" href="tel:00000000000"
+            >+0 (000) 000-00-00</a
+          >
+        </p>
+      </footer>
+    </div>
+  </body>
+</html>

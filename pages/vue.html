@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" >
+    <title>Статья - Vue.js</title>
+    <link rel="stylesheet" href="../css/styles.css" >
+  </head>
+  <body>
+    <div class="container">
+      <header class="header">
+        <a href="../index.html" class="header-inner">
+          <h1 class="header__title">frame.works</h1>
+          <span class="header__subtitle">Все о самых разных фреймворках</span>
+        </a>
+      </header>
+      <div class="app">
+        <aside class="app-sidebar">
+          <form class="app-sidebar-search">
+            <input type="search" class="app-sidebar-search__input" required >
+            <input
+              type="submit"
+              class="app-sidebar-search__button"
+              value="Поиск"
+            >
+          </form>
+          <ul class="app-sidebar-items">
+            <li class="app-sidebar-item">
+              <h2 class="app-sidebar-item__title">Свежие записи</h2>
+              <ul class="app-sidebar-item-items">
+                <li class="app-sidebar-item-item">
+                  <a href="./react.html" class="app-sidebar-item-item__link"
+                    >React</a
+                  >
+                </li>
+                <li class="app-sidebar-item-item">
+                  <a href="" class="app-sidebar-item-item__link">Vue</a>
+                </li>
+              </ul>
+            </li>
+            <li class="app-sidebar-item">
+              <h2 class="app-sidebar-item__title">Свежие комментарии</h2>
+              <ul class="app-sidebar-item-items">
+                <li class="app-sidebar-item-item">
+                  <a
+                    href="./react.html#comments-section"
+                    class="app-sidebar-item-item__link"
+                    >Эван Ю
+                    <span class="app-sidebar-item-item__link-highlight"
+                      >к записи</span
+                    >
+                    React</a
+                  >
+                </li>
+              </ul>
+            </li>
+            <li class="app-sidebar-item">
+              <h2 class="app-sidebar-item__title">Архивы</h2>
+              <ul class="app-sidebar-item-items">
+                <li class="app-sidebar-item-item">
+                  <a href="./archive.html" class="app-sidebar-item-item__link"
+                    >Февраль 2013</a
+                  >
+                </li>
+              </ul>
+            </li>
+            <li class="app-sidebar-item">
+              <h2 class="app-sidebar-item__title">Рубрики</h2>
+              <ul class="app-sidebar-item-items">
+                <li class="app-sidebar-item-item">
+                  <a href="./frontend.html" class="app-sidebar-item-item__link"
+                    >Frontend</a
+                  >
+                </li>
+              </ul>
+            </li>
+            <li class="app-sidebar-item">
+              <h2 class="app-sidebar-item__title">Мета</h2>
+              <ul class="app-sidebar-item-items">
+                <li class="app-sidebar-item-item">
+                  <a href="#" class="app-sidebar-item-item__link"
+                    >Управление сайтом</a
+                  >
+                </li>
+                <li class="app-sidebar-item-item">
+                  <a href="#" class="app-sidebar-item-item__link">Выйти</a>
+                </li>
+                <li class="app-sidebar-item-item">
+                  <a href="#" class="app-sidebar-item-item__link">
+                    <u class="app-sidebar-item-item__link-underline">RSS</u>
+                    записей
+                  </a>
+                </li>
+                <li class="app-sidebar-item-item">
+                  <a href="#" class="app-sidebar-item-item__link">
+                    <u class="app-sidebar-item-item__link-underline">RSS</u>
+                    комментариев
+                  </a>
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </aside>
+        <main class="app-main app-main--article">
+          <span class="article__time">12 февраля 2013</span>
+          <h1 class="article__h1">Введение в Vue.js</h1>
+          <p class="article__p">
+            Vue.js — это прогрессивный JavaScript-фреймворк для создания
+            пользовательских интерфейсов. Он разработан Эваном Ю и известен
+            своей простотой и гибкостью, что делает его отличным выбором как для
+            небольших проектов, так и для крупных приложений.
+          </p>
+          <h2 class="article__h2">Основные концепции Vue.js</h2>
+          <p class="article__p">
+            Vue.js сочетает в себе лучшие черты других фреймворков, такие как
+            реактивность и компонентный подход, что позволяет разработчикам
+            создавать мощные и поддерживаемые приложения.
+          </p>
+          <h3 class="article__h3">Компоненты</h3>
+          <p class="article__p">
+            Как и в React, компоненты являются основными строительными блоками
+            Vue.js. Каждый компонент инкапсулирует свою логику, шаблон и стили,
+            что делает код более модульным и удобным для повторного
+            использования.
+          </p>
+          <h3 class="article__h3">Реактивность</h3>
+          <p class="article__p">
+            Одной из ключевых особенностей Vue.js является его реактивная
+            система данных. Когда данные изменяются, Vue автоматически обновляет
+            DOM, что значительно упрощает управление состоянием приложения.
+          </p>
+          <h3 class="article__h3">Директивы</h3>
+          <p class="article__p">
+            Vue.js использует директивы, такие как <code>v-bind</code>,
+            <code>v-model</code> и <code>v-for</code>, чтобы связывать данные с
+            DOM и управлять его поведением. Это делает код более декларативным и
+            удобным для чтения.
+          </p>
+          <h2 class="article__h2">Преимущества Vue.js</h2>
+          <ol class="article__ol">
+            <li class="article__ol-li">
+              Простота интеграции в существующие проекты.
+            </li>
+            <li class="article__ol-li">
+              Реактивная система данных, которая автоматически обновляет
+              интерфейс.
+            </li>
+            <li class="article__ol-li">
+              Гибкость и модульность благодаря компонентной архитектуре.
+            </li>
+          </ol>
+          <h2 class="article__h2">Пример использования Vue.js</h2>
+          <p class="article__p">
+            Ниже приведен пример простого компонента, который отображает текст:
+          </p>
+          <code class="article__blockquote">
+            <span class="article__blockquote-text">
+              &lt;template&gt;<br>
+              &nbsp;&nbsp;&lt;div&gt;<br>
+              &nbsp;&nbsp;&nbsp;&nbsp;&lt;h1&gt;Привет, {{ name }}&lt;/h1&gt;<br>
+              &nbsp;&nbsp;&lt;/div&gt;<br>
+              &lt;/template&gt;<br>
+              <br>
+              &lt;script&gt;<br>
+              &nbsp;&nbsp;export default {<br>
+              &nbsp;&nbsp;&nbsp;&nbsp;data() {<br>
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;return {<br>
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;name: 'Vue.js'<br>
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;};<br>
+              &nbsp;&nbsp;&nbsp;&nbsp;}<br>
+              &nbsp;&nbsp;};<br>
+              &lt;/script&gt;
+            </span>
+          </code>
+          <h2 class="article__h2">Галерея</h2>
+          <div class="article__image-grid">
+            <div class="article__image-grid-img">
+              <img
+                class="article__image-grid-img-inner"
+                src="../public/img/articles/article-2/1.png"
+                alt="Пример метода submitForm на Vue используя Options API"
+              >
+            </div>
+            <div class="article__image-grid-img">
+              <img
+                class="article__image-grid-img-inner"
+                src="../public/img/articles/article-2/2.webp"
+                alt="Пример получения пропсов через script setup и defineProps на Vue"
+              >
+            </div>
+            <div class="article__image-grid-img">
+              <img
+                class="article__image-grid-img-inner"
+                src="../public/img/articles/article-2/3.png"
+                alt="Пример кода внутри script с методами для навигации между страницами в Nuxt"
+              >
+            </div>
+            <div class="article__image-grid-img">
+              <img
+                class="article__image-grid-img-inner"
+                src="../public/img/articles/article-2/4.png"
+                alt="Пример использования библиотеки @uppy для подключения дешбордов в Vue"
+              >
+            </div>
+          </div>
+          <h2 class="article__h4">Заключение</h2>
+          <p class="article__p">
+            Vue.js — это мощный и гибкий инструмент для создания современных
+            веб-приложений. Его простота и интуитивность делают его отличным
+            выбором для разработчиков любого уровня.
+          </p>
+        </main>
+      </div>
+      <div class="article__comments" id="comments-section">
+        <h2 class="article__comments-title">Комментарии</h2>
+        <div class="article__comment">
+          <h3 class="article__comment-title">Эван Ю</h3>
+          <p class="article__comment-text">
+            Vue.js — это как уютный плед для разработчика. Всё просто, понятно и
+            работает из коробки. Иногда кажется, что Vue — это фреймворк для
+            тех, кто устал от сложностей других инструментов. Но не стоит
+            недооценивать его мощь! Vue может справиться с задачами любой
+            сложности, и при этом он остаётся таким же дружелюбным и
+            предсказуемым.
+          </p>
+          <p class="article__comment-text">
+            Кстати, если кто-то ещё не пробовал Composition API, очень
+            рекомендую. Это как перейти с обычного чая на чай с бергамотом —
+            привычно, но с изюминкой. 😉
+          </p>
+        </div>
+      </div>
+      <footer class="footer">
+        <p class="footer-text">
+          Все права защищены &copy; 2013 frame.works
+          <br>
+          Почта автора:
+          <a class="footer-text__link" href="mailto:test@mail.com"
+            >test@mail.com</a
+          >; Телефон автора:
+          <a class="footer-text__link" href="tel:00000000000"
+            >+0 (000) 000-00-00</a
+          >
+        </p>
+      </footer>
+    </div>
+  </body>
+</html>

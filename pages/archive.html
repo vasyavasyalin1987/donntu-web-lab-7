@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" >
+    <title>Архив</title>
+    <link rel="stylesheet" href="../css/styles.css" >
+  </head>
+  <body>
+    <div class="container">
+      <header class="header">
+        <a href="../index.html" class="header-inner">
+          <h1 class="header__title">frame.works</h1>
+          <span class="header__subtitle">Все о самых разных фреймворках</span>
+        </a>
+      </header>
+      <div class="app">
+        <aside class="app-sidebar">
+          <form class="app-sidebar-search">
+            <input type="search" class="app-sidebar-search__input" required >
+            <input
+              type="submit"
+              class="app-sidebar-search__button"
+              value="Поиск"
+            >
+          </form>
+          <ul class="app-sidebar-items">
+            <li class="app-sidebar-item">
+              <h2 class="app-sidebar-item__title">Свежие записи</h2>
+              <ul class="app-sidebar-item-items">
+                <li class="app-sidebar-item-item">
+                  <a href="./react.html" class="app-sidebar-item-item__link"
+                    >React</a
+                  >
+                </li>
+                <li class="app-sidebar-item-item">
+                  <a href="./vue.html" class="app-sidebar-item-item__link"
+                    >Vue</a
+                  >
+                </li>
+              </ul>
+            </li>
+            <li class="app-sidebar-item">
+              <h2 class="app-sidebar-item__title">Свежие комментарии</h2>
+              <ul class="app-sidebar-item-items">
+                <li class="app-sidebar-item-item">
+                  <a
+                    href="./react.html#comments-section"
+                    class="app-sidebar-item-item__link"
+                    >Эван Ю
+                    <span class="app-sidebar-item-item__link-highlight"
+                      >к записи</span
+                    >
+                    React</a
+                  >
+                </li>
+              </ul>
+            </li>
+            <li class="app-sidebar-item">
+              <h2 class="app-sidebar-item__title">Архивы</h2>
+              <ul class="app-sidebar-item-items">
+                <li class="app-sidebar-item-item">
+                  <a href="" class="app-sidebar-item-item__link"
+                    >Февраль 2013</a
+                  >
+                </li>
+              </ul>
+            </li>
+            <li class="app-sidebar-item">
+              <h2 class="app-sidebar-item__title">Рубрики</h2>
+              <ul class="app-sidebar-item-items">
+                <li class="app-sidebar-item-item">
+                  <a href="./frontend.html" class="app-sidebar-item-item__link"
+                    >Frontend</a
+                  >
+                </li>
+              </ul>
+            </li>
+            <li class="app-sidebar-item">
+              <h2 class="app-sidebar-item__title">Мета</h2>
+              <ul class="app-sidebar-item-items">
+                <li class="app-sidebar-item-item">
+                  <a href="#" class="app-sidebar-item-item__link"
+                    >Управление сайтом</a
+                  >
+                </li>
+                <li class="app-sidebar-item-item">
+                  <a href="#" class="app-sidebar-item-item__link">Выйти</a>
+                </li>
+                <li class="app-sidebar-item-item">
+                  <a href="#" class="app-sidebar-item-item__link">
+                    <u class="app-sidebar-item-item__link-underline">RSS</u>
+                    записей
+                  </a>
+                </li>
+                <li class="app-sidebar-item-item">
+                  <a href="#" class="app-sidebar-item-item__link">
+                    <u class="app-sidebar-item-item__link-underline">RSS</u>
+                    комментариев
+                  </a>
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </aside>
+        <main class="app-main">
+          <h2 class="filters-title">Статьи за февраль 2013</h2>
+          <article class="app-main-article">
+            <div class="app-main-article-headline">
+              <h2 class="app-main-article__title">React</h2>
+              <button class="app-main-article__edit-button">
+                Редактировать запись
+              </button>
+            </div>
+            <div class="app-main-article-info">
+              <span
+                class="app-main-article-info__item app-main-article-info__item--date"
+              >
+                24 февраля 2013
+              </span>
+              <span class="app-main-article-info__item">Frontend</span>
+              <a
+                href="#"
+                class="app-main-article-info__item app-main-article-info__item--arrow"
+                >1 комментарий</a
+              >
+            </div>
+            <div class="app-main-article-content">
+              <div class="app-main-article-content__image">
+                <img
+                  class="app-main-article-content__image-inner"
+                  src="../public/img/articles/article-1/thumbnail.svg"
+                  alt="Логотип фреймворка React"
+                >
+              </div>
+              <p class="app-main-article-content__text">
+                React — это популярная JavaScript-библиотека для создания
+                пользовательских интерфейсов, разработанная Facebook. Она
+                позволяет разрабатывать веб-приложения с использованием
+                компонентного подхода, что упрощает создание и поддержку сложных
+                интерфейсов. React использует виртуальный DOM для оптимизации
+                производительности, обеспечивая быструю отрисовку изменений.
+                Благодаря своей гибкости, простоте интеграции и активному
+                сообществу, React стал одним из ключевых инструментов в
+                современной веб-разработке.
+              </p>
+            </div>
+          </article>
+          <article class="app-main-article">
+            <div class="app-main-article-headline">
+              <h2 class="app-main-article__title">Vue</h2>
+              <button class="app-main-article__edit-button">
+                Редактировать запись
+              </button>
+            </div>
+            <div class="app-main-article-info">
+              <span
+                class="app-main-article-info__item app-main-article-info__item--date"
+              >
+                12 февраля 2013
+              </span>
+              <span class="app-main-article-info__item">Frontend</span>
+              <span class="app-main-article-info__item">Нет комментариев</span>
+            </div>
+            <div class="app-main-article-content">
+              <div class="app-main-article-content__image">
+                <img
+                  class="app-main-article-content__image-inner"
+                  src="../public/img/articles/article-2/thumbnail.jpg"
+                  alt="Логотип фреймворка Vue"
+                >
+              </div>
+              <p class="app-main-article-content__text">
+                Vue — это прогрессивный JavaScript-фреймворк для создания
+                пользовательских интерфейсов, разработанный Эваном Ю. Он
+                отличается простотой интеграции, гибкостью и интуитивно понятным
+                синтаксисом, что делает его отличным выбором как для небольших
+                проектов, так и для крупных приложений. Vue использует
+                компонентный подход и реактивную систему данных, которая
+                автоматически обновляет DOM при изменениях. Благодаря подробной
+                документации, низкому порогу входа и активному сообществу, Vue
+                завоевал популярность среди разработчиков как мощный и удобный
+                инструмент для веб-разработки.
+              </p>
+            </div>
+          </article>
+        </main>
+      </div>
+      <footer class="footer">
+        <p class="footer-text">
+          Все права защищены &copy; 2013 frame.works
+          <br>
+          Почта автора:
+          <a class="footer-text__link" href="mailto:test@mail.com"
+            >test@mail.com</a
+          >; Телефон автора:
+          <a class="footer-text__link" href="tel:00000000000"
+            >+0 (000) 000-00-00</a
+          >
+        </p>
+      </footer>
+    </div>
+  </body>
+</html>
