@@ -1,0 +1,153 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #2b364a;
+  font-family: Roboto;
+  padding-bottom: 16px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.container {
+  margin: 0 auto;
+  max-width: 835px;
+  min-height: 400px;
+  padding: 14px 22px 0 20px;
+}
+
+.container::before {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 380px;
+  z-index: -1;
+  background-image: url("../public/img/shared/1.jpg");
+  background-position: center -24px;
+  background-repeat: no-repeat;
+  background-size: contain;
+  box-shadow: inset 0px -30px 15px 15px #2b364a;
+  content: "";
+}
+
+.container::after {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 380px;
+  z-index: -2;
+  background-image: url("../public/img/shared/2.jpg");
+  background-position: center -24px;
+  background-repeat: repeat-x;
+  background-size: contain;
+  content: "";
+}
+
+.header {
+  margin: 0 30px 28px;
+}
+
+.header-inner {
+  display: block;
+  text-decoration: none;
+  margin: 0;
+  padding: 0;
+}
+
+.header__title {
+  color: #789fc0;
+  text-shadow: 1px 1px 1px #000;
+  margin: 0 0 4px;
+  font-family: "Regula Old Face";
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 1;
+}
+
+.header__subtitle {
+  display: block;
+  font-size: 8px;
+  line-height: 1;
+  margin-left: 6px;
+  font-weight: 300;
+  font-style: italic;
+  color: #fff;
+}
+
+.app {
+  display: flex;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  padding: 32px 36px 0 24px;
+  gap: 20px;
+  margin-bottom: 28px;
+}
+
+.app-main {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  flex: 999 1 0;
+  min-width: 250px;
+}
+
+.app-main--article {
+  padding: 16px;
+  border: 1px solid #66728a;
+  background-color: #29334c;
+}
+
+.app-sidebar {
+  width: 224px;
+  flex: 1 1 0;
+  padding-top: 38px;
+}
+
+.footer-text {
+  font-size: 7px;
+  line-height: 2;
+  color: #5f6b81;
+  font-weight: 400;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.footer-text__link {
+  color: #5f6b81;
+}
+
+.app-sidebar-search {
+  display: flex;
+  gap: 2px;
+  margin-bottom: 14px;
+}
+
+.app-sidebar-search__input {
+  font-size: 12px;
+  line-height: 14px;
+  border: 1px solid #696c73;
+  background-color: #fff;
+  color: #333;
+  appearance: none;
+  border-radius: 1px;
+  margin-bottom: 1px;
+}
+
+.app-sidebar-search__button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2px 6px;
+  margin: 0;
+  border: 1px solid #696c73;
+  background-color: #a09e9f;
+  color: #ffffff;
+  font-size: 12px;
+  line-height: 14px;
+  appearance: none;
+  border-radius: 1px;
+  cursor: pointer;
+}
